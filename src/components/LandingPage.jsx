@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import Logo from "./logo";
 import "../index.css";
 import { HiOutlineClock, HiOutlineSparkles, HiOutlineCheckCircle } from "react-icons/hi2";
 import { useNavigate } from "react-router-dom";

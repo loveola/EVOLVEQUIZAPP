@@ -1,0 +1,92 @@
+/* index.css */
+
+/* Import Tailwind base, components, utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fade up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Utility classes */
+.animate-fadeUp {
+  animation: fadeUp 0.8s ease forwards;
+}
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Delay classes so each section animates one after another */
+.delay-100 { animation-delay: 0.1s; opacity: 0; }
+.delay-200 { animation-delay: 0.2s; opacity: 0; }
+.delay-300 { animation-delay: 0.3s; opacity: 0; }
+.delay-400 { animation-delay: 0.4s; opacity: 0; }
+.delay-500 { animation-delay: 0.5s; opacity: 0; }
+.delay-600 { animation-delay: 0.6s; opacity: 0; }
+/* Define global CSS variables */
+.delay-700 { animation-delay: 0.7s; opacity: 0; }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+:root {
+  /* Fonts */
+  --font-display: "Playfair Display", "sans-serif";
+  --font-body: "Inter", "sans-serif";
+
+  /* Background colors */
+  --bg-cream: #f6f3ee;
+  --bg-darkcream:#f3e6d3;
+
+ 
+  /* Text colors */
+  --text-gold: #e4b643;
+  --text-white:#fff;
+  --text-brown:#462d24;
+  --text-lightbrown:#aa9691;
+
+}
+
+/* Utility classes referencing the CSS variables */
+.bg-cream {
+  background-color: var(--bg-cream);
+}
+.bg-darkcream{
+  background-color:var(--bg-darkcream)
+}
+.text-gold {
+  color: var(--text-gold);
+}
+.text-white {
+  color: var(--text-white);  /* Remove the extra parentheses */
+}
+.text-brown {
+  color: var(--text-brown);  /* Remove the extra parentheses */
+}
+.text-lightbrown{
+  color: var(--text-lightbrown);  /* Remove the extra parentheses */
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
